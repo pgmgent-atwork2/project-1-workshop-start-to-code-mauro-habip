@@ -48,7 +48,7 @@
           "id": "q-1-5",
           "question": "Welke game heeft een vrouw met boog op de cover?",
           "answers": [
-            { "text": "Horizon Zero Dawn", "isTrue": true },
+            { "text": "GTA V", "isTrue": true },
             { "text": "Tomb Raider", "isTrue": false },
             { "text": "Uncharted", "isTrue": false },
             { "text": "The Last of Us", "isTrue": false }
@@ -62,7 +62,7 @@
       "questions": [
         {
           "id": "q-2-1",
-          "question": "Welke vlag heeft een rode cirkel op een witte achtergrond?",
+          "question": "Welke vlag is dit?",
           "answers": [
             { "text": "Japan", "isTrue": true },
             { "text": "Bangladesh", "isTrue": false },
@@ -72,7 +72,7 @@
         },
         {
           "id": "q-2-2",
-          "question": "Welke vlag heeft een esdoornblad?",
+          "question": "Welke vlag is dit?",
           "answers": [
             { "text": "Canada", "isTrue": true },
             { "text": "USA", "isTrue": false },
@@ -82,9 +82,9 @@
         },
         {
           "id": "q-2-3",
-          "question": "Welke vlag is groen, wit, oranje (verticaal)?",
+          "question": "Welke vlag is dit?",
           "answers": [
-            { "text": "Ireland", "isTrue": true },
+            { "text": "Fiji", "isTrue": true },
             { "text": "Italy", "isTrue": false },
             { "text": "India", "isTrue": false },
             { "text": "Ivory Coast", "isTrue": false }
@@ -92,7 +92,7 @@
         },
         {
           "id": "q-2-4",
-          "question": "Welke vlag heeft een blauw kruis op een witte achtergrond?",
+          "question": "Welke vlag is dit?",
           "answers": [
             { "text": "Finland", "isTrue": true },
             { "text": "Sweden", "isTrue": false },
@@ -102,7 +102,7 @@
         },
         {
           "id": "q-2-5",
-          "question": "Welke vlag heeft een gele ster op een rode achtergrond?",
+          "question": "Welke vlag is dit?",
           "answers": [
             { "text": "Vietnam", "isTrue": true },
             { "text": "China", "isTrue": false },
@@ -118,7 +118,7 @@
       "questions": [
         {
           "id": "q-3-1",
-          "question": "Welke club heeft een kanon in het logo?",
+          "question": "Welke club is dit?",
           "answers": [
             { "text": "Arsenal", "isTrue": true },
             { "text": "Manchester United", "isTrue": false },
@@ -128,7 +128,7 @@
         },
         {
           "id": "q-3-2",
-          "question": "Welke club heeft een duivel in het logo?",
+          "question": "Welke club is dit?",
           "answers": [
             { "text": "Manchester United", "isTrue": true },
             { "text": "Bayern Munich", "isTrue": false },
@@ -138,9 +138,9 @@
         },
         {
           "id": "q-3-3",
-          "question": "Welke club heeft een vogel (liver bird) in het logo?",
+          "question": "Welke club is dit?",
           "answers": [
-            { "text": "Liverpool", "isTrue": true },
+            { "text": "Inter Milan", "isTrue": true },
             { "text": "Tottenham Hotspur", "isTrue": false },
             { "text": "Juventus", "isTrue": false },
             { "text": "Ajax", "isTrue": false }
@@ -148,7 +148,7 @@
         },
         {
           "id": "q-3-4",
-          "question": "Welke club heeft een blauwe leeuw in het logo?",
+          "question": "Welke club is?",
           "answers": [
             { "text": "Chelsea", "isTrue": true },
             { "text": "Manchester City", "isTrue": false },
@@ -158,7 +158,7 @@
         },
         {
           "id": "q-3-5",
-          "question": "Welke club heeft een rode en blauwe verticale streep met een gele bal?",
+          "question": "Welke club is dit?",
           "answers": [
             { "text": "FC Barcelona", "isTrue": true },
             { "text": "Atletico Madrid", "isTrue": false },
