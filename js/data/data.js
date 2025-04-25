@@ -68,7 +68,7 @@ export const data = {
         {
           "id": "q-2-1",
           "question": "Welke vlag is dit?",
-          "image": "../../assets/images/questions/flags/japan.png",
+          "image": "assets/images/questions/flags/japan.png",
           "answers": [
             { "text": "Japan", "isTrue": true },
             { "text": "Bangladesh", "isTrue": false },
@@ -79,7 +79,7 @@ export const data = {
         {
           "id": "q-2-2",
           "question": "Welke vlag is dit?",
-          "image": "../../assets/images/questions/flags/canada.png",
+          "image": "assets/images/questions/flags/canada.png",
           "answers": [
             { "text": "Canada", "isTrue": true },
             { "text": "USA", "isTrue": false },
@@ -90,7 +90,7 @@ export const data = {
         {
           "id": "q-2-3",
           "question": "Welke vlag is dit?",
-          "image": "../../assets/images/questions/flags/fiji.png",
+          "image": "assets/images/questions/flags/fiji.png",
           "answers": [
             { "text": "Fiji", "isTrue": true },
             { "text": "Italy", "isTrue": false },
@@ -101,7 +101,7 @@ export const data = {
         {
           "id": "q-2-4",
           "question": "Welke vlag is dit?",
-          "image": "../../assets/images/questions/flags/finland.png",
+          "image": "assets/images/questions/flags/finland.png",
           "answers": [
             { "text": "Finland", "isTrue": true },
             { "text": "Sweden", "isTrue": false },
@@ -112,7 +112,7 @@ export const data = {
         {
           "id": "q-2-5",
           "question": "Welke vlag is dit?",
-          "image": "../../assets/images/questions/flags/vietnam.png",
+          "image": "assets/images/questions/flags/vietnam.png",
           "answers": [
             { "text": "Vietnam", "isTrue": true },
             { "text": "China", "isTrue": false },
@@ -129,7 +129,7 @@ export const data = {
         {
           "id": "q-3-1",
           "question": "Welke club is dit?",
-          "image": "../../assets/images/questions/sport/arsenal.jpg",
+          "image": "assets/images/questions/sport/arsenal.jpg",
           "answers": [
             { "text": "Arsenal", "isTrue": true },
             { "text": "Manchester United", "isTrue": false },
@@ -140,7 +140,7 @@ export const data = {
         {
           "id": "q-3-2",
           "question": "Welke club is dit?",
-          "image": "../../assets/images/questions/sport/manchesterunited.png",
+          "image": "assets/images/questions/sport/manchesterunited.png",
           "answers": [
             { "text": "Manchester United", "isTrue": true },
             { "text": "Bayern Munich", "isTrue": false },
@@ -151,7 +151,7 @@ export const data = {
         {
           "id": "q-3-3",
           "question": "Welke club is dit?",
-          "image": "../../assets/images/questions/sport/intermilan.png",
+          "image": "assets/images/questions/sport/intermilan.png",
           "answers": [
             { "text": "Inter Milan", "isTrue": true },
             { "text": "Tottenham Hotspur", "isTrue": false },
@@ -162,7 +162,7 @@ export const data = {
         {
           "id": "q-3-4",
           "question": "Welke club is?",
-          "image": "../../assets/images/questions/sport/chelsea.png",
+          "image": "assets/images/questions/sport/chelsea.png",
           "answers": [
             { "text": "Chelsea", "isTrue": true },
             { "text": "Manchester City", "isTrue": false },
@@ -173,7 +173,7 @@ export const data = {
         {
           "id": "q-3-5",
           "question": "Welke club is dit?",
-          "image": "../../assets/images/questions/sport/barcelona.png",
+          "image": "assets/images/questions/sport/barcelona.png",
           "answers": [
             { "text": "FC Barcelona", "isTrue": true },
             { "text": "Atletico Madrid", "isTrue": false },
