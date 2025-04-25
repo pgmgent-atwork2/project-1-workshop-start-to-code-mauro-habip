@@ -107,3 +107,35 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.code-container {
+  position: relative;
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 0.6rem;
+  right: .6rem;
+  background-color: #61dafb;
+  border: none;
+  color: #000;
+  padding: 0.4rem 0.7rem;
+  border-radius: .3rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.copy-btn:hover {
+  background-color: #21a1f1;
+}
+
+pre {
+  margin: 0;
+}
