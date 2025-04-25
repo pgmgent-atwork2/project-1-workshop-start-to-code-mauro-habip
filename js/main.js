@@ -1,194 +1,106 @@
-import { data } from './data/data.js';
+import { data } from "./data/data.js";
 
+const $gamesButton = document.getElementById("games");
+const $sportsButton = document.getElementById("sports");
+const $countryButton = document.getElementById("countries");
 
-const $gamesButton = document.getElementById('games');
-const $sportsButton = document.getElementById('sports');
-const $countryButton = document.getElementById('countries');
+const $quizIntro = document.getElementById("intro");
+const $gameIntro = document.getElementById("game-intro");
 
-const $quizIntro = document.getElementById('intro');
-const $gameIntro = document.getElementById('game-intro');
+const copyButton = document.getElementById("copyBtn");
 
-let theme = '';
+function copyCode(buttonId) {
+  const button = document.getElementById(buttonId);
+  const code = button.nextElementSibling.innerText;
 
-$gamesButton.addEventListener('click', () => {
-    theme = 'games';
-    $quizIntro.classList.add('hidden');
-    $gameIntro.classList.remove('hidden');
-  
-    if (theme === 'games') {
-      questions = data.themes.find(themeData => themeData.id === 'games');
-  
-      let currentQuestionIndex = 0;
-  
-      function showQuestion() {
-        const current = questions.questions[currentQuestionIndex];
-  
-
-        $gameIntro.innerHTML = `
-          <h2>${current.question}</h2>
-          <img class="game-intro__image" src="${current.image}" alt="Question Image">
-          <div class="answers">
-            ${current.answers
-              .sort(() => 0.5 - Math.random())
-              .map(answer => `<button class="answer">${answer.text}</button>`)
-              .join('')}
-          </div>
-        `;
-  
-
-        document.querySelectorAll('.answer').forEach(button => {
-          button.addEventListener('click', () => {
-            document.querySelectorAll('.answer').forEach(btn => btn.disabled = true);
-            if (button.textContent === current.answers.find(a => a.isTrue).text) {
-                button.style.backgroundColor = 'green';
-            } else {
-                button.style.backgroundColor = 'red';
-            }
-
-
-            currentQuestionIndex++;
-            if (currentQuestionIndex < questions.questions.length) {
-                setTimeout(() => {
-                    showQuestion();
-                }, 1500);
-                    
-
-              
-            } else {
-                setTimeout(() => {
-                    $gameIntro.innerHTML = `<h2>Quiz afgelopen!</h2>`;
-                }, 1500);
-              
-            }
-          });
-        });
-      }
-  
-      showQuestion();
-    }
+  navigator.clipboard.writeText(code).then(() => {
+    button.innerText = "Copied!";
+    setTimeout(() => {
+      button.innerText = "Copy";
+    }, 2000);
   });
-  
+}
 
-$sportsButton.addEventListener('click', () => {
-
-    theme = 'sports';
-    $quizIntro.classList.add('hidden');
-    $gameIntro.classList.remove('hidden');
-  
-    if (theme === 'sports') {
-      questions = data.themes.find(themeData => themeData.id === 'sports');
-  
-      let currentQuestionIndex = 0;
-  
-      function showQuestion() {
-        const current = questions.questions[currentQuestionIndex];
-  
-
-        $gameIntro.innerHTML = `
-          <h2>${current.question}</h2>
-          <img class="game-intro__image" src="${current.image}" alt="Question Image">
-          <div class="answers">
-            ${current.answers
-              .sort(() => 0.5 - Math.random())
-              .map(answer => `<button class="answer">${answer.text}</button>`)
-              .join('')}
-          </div>
-        `;
-  
-
-        document.querySelectorAll('.answer').forEach(button => {
-          button.addEventListener('click', () => {
-            document.querySelectorAll('.answer').forEach(btn => btn.disabled = true);
-            if (button.textContent === current.answers.find(a => a.isTrue).text) {
-                button.style.backgroundColor = 'green';
-            } else {
-                button.style.backgroundColor = 'red';
-            }
-
-
-            currentQuestionIndex++;
-            if (currentQuestionIndex < questions.questions.length) {
-                setTimeout(() => {
-                    showQuestion();
-                }, 1500);
-                    
-
-              
-            } else {
-                setTimeout(() => {
-                    $gameIntro.innerHTML = `<h2>Quiz afgelopen!</h2>`;
-                }, 1500);
-              
-            }
-          });
-        });
-      }
-  
-      showQuestion();
-    }
+if (copyButton) {
+  copyButton.addEventListener("click", () => {
+    copyCode("copyBtn");
   });
+}
 
+if (
+  $gamesButton &&
+  $sportsButton &&
+  $countryButton &&
+  $quizIntro &&
+  $gameIntro
+) {
+  let theme = "";
+  let rightAnswers = 0;
+  let questions = data;
 
-$countryButton.addEventListener('click', () => {
+  function setupQuiz(button, themeId) {
+    button.addEventListener("click", () => {
+      theme = themeId;
+      $quizIntro.classList.add("hidden");
+      $gameIntro.classList.remove("hidden");
 
-    theme = 'flags';
-    $quizIntro.classList.add('hidden');
-    $gameIntro.classList.remove('hidden');
-  
-    if (theme === 'flags') {
-      questions = data.themes.find(themeData => themeData.id === 'flags');
-  
+      const themeData = data.themes.find(
+        (themeData) => themeData.id === themeId
+      );
+      if (!themeData) return;
+
       let currentQuestionIndex = 0;
-  
+
       function showQuestion() {
-        const current = questions.questions[currentQuestionIndex];
-  
+        const current = themeData.questions[currentQuestionIndex];
 
         $gameIntro.innerHTML = `
           <h2>${current.question}</h2>
-          <img class="game-intro__image" src="${current.image}" alt="Question Image">
+          <img class="game-intro__image" src="${
+            current.image
+          }" alt="Question Image">
           <div class="answers">
             ${current.answers
               .sort(() => 0.5 - Math.random())
-              .map(answer => `<button class="answer">${answer.text}</button>`)
-              .join('')}
+              .map((answer) => `<button class="answer">${answer.text}</button>`)
+              .join("")}
           </div>
         `;
-  
 
-        document.querySelectorAll('.answer').forEach(button => {
-          button.addEventListener('click', () => {
-            document.querySelectorAll('.answer').forEach(btn => btn.disabled = true);
-            if (button.textContent === current.answers.find(a => a.isTrue).text) {
-                button.style.backgroundColor = 'green';
+        document.querySelectorAll(".answer").forEach((button) => {
+          button.addEventListener("click", () => {
+            document
+              .querySelectorAll(".answer")
+              .forEach((btn) => (btn.disabled = true));
+            if (
+              button.textContent === current.answers.find((a) => a.isTrue).text
+            ) {
+              button.style.backgroundColor = "green";
+              rightAnswers++;
             } else {
-                button.style.backgroundColor = 'red';
+              button.style.backgroundColor = "red";
             }
 
-
             currentQuestionIndex++;
-            if (currentQuestionIndex < questions.questions.length) {
-                setTimeout(() => {
-                    showQuestion();
-                }, 1500);
-                    
-
-              
+            if (currentQuestionIndex < themeData.questions.length) {
+              setTimeout(showQuestion, 1500);
             } else {
-                setTimeout(() => {
-                    $gameIntro.innerHTML = `<h2>Quiz afgelopen!</h2>`;
-                }, 1500);
-              
+              setTimeout(() => {
+                $gameIntro.innerHTML = `
+                  <h2>Quiz afgelopen!</h2>
+                  <p>Je hebt ${rightAnswers} van de ${themeData.questions.length} vragen goed beantwoord.</p>
+                `;
+              }, 1500);
             }
           });
         });
       }
-  
+
       showQuestion();
-    }
-});
+    });
+  }
 
-
-let questions = data;
-  
-
+  setupQuiz($gamesButton, "games");
+  setupQuiz($sportsButton, "sports");
+  setupQuiz($countryButton, "flags");
+}
