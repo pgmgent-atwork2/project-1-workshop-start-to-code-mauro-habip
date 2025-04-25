@@ -1,10 +1,20 @@
 import { data } from "./data/data.js";
-import { copyCode } from "./copycode.js";
-
 const copyButton = document.getElementById("copyBtn");
 
+function copyCode(buttonId) {
+  const button = document.getElementById(buttonId);
+  const code = button.nextElementSibling.innerText;
+
+  navigator.clipboard.writeText(code).then(() => {
+    button.innerText = "Copied!";
+    setTimeout(() => {
+      button.innerText = "Copy";
+    }, 2000);
+  });
+}
+
 if (copyButton) {
-  document.getElementById("copyBtn").addEventListener("click", () => {
+  copyButton.addEventListener("click", () => {
     copyCode("copyBtn");
   });
 }
