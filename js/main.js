@@ -1,4 +1,4 @@
-import data from '../js/data.json''
+import data from '../js/data/data.json';
 
 
 const $gamesButton = document.getElementById('games');
@@ -14,7 +14,7 @@ $gamesButton.addEventListener('click', () => {
     $quizIntro.classList.add('hidden');
     $gameIntro.classList.remove('hidden');
 
-
+    
 
 
 });
