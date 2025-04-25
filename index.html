@@ -29,18 +29,22 @@
     </header>
 
     <main>
-        <section class="game hidden" id="game-intro">
-        </section>
+        <div class="game-intro hidden" id="quiz-container">
+            <h2 id="question-text"></h2>
+            <img id="question-image" src="" alt="question image" style="max-width: 300px;" />
+            <div id="answers-container"></div>
+          </div>
+          
 
 
         <section class="intro" id="intro">
-            <img src="assets/images/frontstudents.png" alt="students">
-            <h2>Welkom bij de slimste student</h2>
-            <p>Dit is een quiz waar je kan laten zien hoe slim je bent.</p>
-            <p>Kies hier onder een thema om te starten</p>
-            <button id="sports">Sport</button>
-            <button id="countries">Vlaggen</button>
-            <button id="games">Games</button>
+            <img class="intro__image" src="assets/images/frontstudents.png" alt="students">
+            <h2 class="intro__title">Welkom bij de slimste student</h2>
+            <p class="intro__text">Dit is een quiz waar je kan laten zien hoe slim je bent.</p>
+            <p class="intro__text">Kies hier onder een thema om te starten</p>
+            <button class="btn btn-blue"  id="sports">Sport</button>
+            <button class="btn btn-yellow" id="countries">Vlaggen</button>
+            <button class="btn btn-orange" id="games">Games</button>
         </section>
     </main>
 

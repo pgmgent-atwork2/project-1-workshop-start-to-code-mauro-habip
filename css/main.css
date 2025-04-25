@@ -1,3 +1,40 @@
+body {
+    background-color: #fdc674;
+}
+
+.intro {
+    margin: 0 auto;
+    width: 40%;
+
+    text-align: center;
+}
+
+.btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.25rem 0.125rem;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background-color: #008CBA; /* Blue */
+
+}
+
+.btn-orange {
+    background-color: #ff9800;
+}
+
+.btn-yellow {
+    background-color: rgb(230, 230, 20) 
+}
+
 .hidden {
   display: none;
 }

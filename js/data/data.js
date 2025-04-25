@@ -1,7 +1,7 @@
-{
+export const data = {
   "themes": [
     {
-      "id": "theme-1",
+      "id": "games",
       "name": "Game-covers",
       "questions": [
         {
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "id": "theme-2",
+      "id": "flags",
       "name": "Flags",
       "questions": [
         {
@@ -123,7 +123,7 @@
       ]
     },
     {
-      "id": "theme-3",
+      "id": "sports",
       "name": "Football Club Logos",
       "questions": [
         {
@@ -184,4 +184,4 @@
       ]
     }
   ]
-}
+};
