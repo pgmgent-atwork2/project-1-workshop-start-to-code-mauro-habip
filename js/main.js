@@ -1,4 +1,4 @@
-
+import { data } from './data/data.js';
 
 
 const $gamesButton = document.getElementById('games');
@@ -7,6 +7,7 @@ const $countryButton = document.getElementById('countries');
 
 const $quizIntro = document.getElementById('intro');
 const $gameIntro = document.getElementById('game-intro');
+
 let theme = '';
 
 $gamesButton.addEventListener('click', () => {
@@ -32,3 +33,7 @@ $countryButton.addEventListener('click', () => {
     $quizIntro.classList.add('hidden');
     $gameIntro.classList.remove('hidden');
 });
+
+
+const questions = data;
+  
