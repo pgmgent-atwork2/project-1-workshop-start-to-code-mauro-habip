@@ -1,9 +1,13 @@
 import { data } from "./data/data.js";
 import { copyCode } from "./copycode.js";
 
-document.getElementById("copyBtn").addEventListener("click", () => {
-  copyCode("copyBtn");
-});
+const copyButton = document.getElementById("copyBtn");
+
+if (copyButton) {
+  document.getElementById("copyBtn").addEventListener("click", () => {
+    copyCode("copyBtn");
+  });
+}
 
 const $gamesButton = document.getElementById("games");
 const $sportsButton = document.getElementById("sports");
