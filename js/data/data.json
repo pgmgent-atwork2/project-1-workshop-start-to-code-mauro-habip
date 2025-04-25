@@ -1,0 +1,172 @@
+{
+  "themes": [
+    {
+      "id": "theme-1",
+      "name": "Game-covers",
+      "questions": [
+        {
+          "id": "q-1-1",
+          "question": "Welke game heeft deze cover?",
+          "answers": [
+            { "text": "The Witcher 3", "isTrue": true },
+            { "text": "Skyrim", "isTrue": false },
+            { "text": "Cyberpunk 2077", "isTrue": false },
+            { "text": "Red Dead Redemption 2", "isTrue": false }
+          ]
+        },
+        {
+          "id": "q-1-2",
+          "question": "Welke game toont een man in een groene harnas op de cover?",
+          "answers": [
+            { "text": "Halo", "isTrue": true },
+            { "text": "Doom", "isTrue": false },
+            { "text": "Crysis", "isTrue": false },
+            { "text": "Call of Duty", "isTrue": false }
+          ]
+        },
+        {
+          "id": "q-1-3",
+          "question": "Welke game heeft een pickaxe op de cover?",
+          "answers": [
+            { "text": "Minecraft", "isTrue": true },
+            { "text": "Fortnite", "isTrue": false },
+            { "text": "Terraria", "isTrue": false },
+            { "text": "Roblox", "isTrue": false }
+          ]
+        },
+        {
+          "id": "q-1-4",
+          "question": "Welke game toont een cowboy op de cover?",
+          "answers": [
+            { "text": "Red Dead Redemption 2", "isTrue": true },
+            { "text": "Far Cry 5", "isTrue": false },
+            { "text": "GTA V", "isTrue": false },
+            { "text": "Assassin’s Creed", "isTrue": false }
+          ]
+        },
+        {
+          "id": "q-1-5",
+          "question": "Welke game heeft een vrouw met boog op de cover?",
+          "answers": [
+            { "text": "Horizon Zero Dawn", "isTrue": true },
+            { "text": "Tomb Raider", "isTrue": false },
+            { "text": "Uncharted", "isTrue": false },
+            { "text": "The Last of Us", "isTrue": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "theme-2",
+      "name": "Flags",
+      "questions": [
+        {
+          "id": "q-2-1",
+          "question": "Welke vlag heeft een rode cirkel op een witte achtergrond?",
+          "answers": [
+            { "text": "Japan", "isTrue": true },
+            { "text": "Bangladesh", "isTrue": false },
+            { "text": "China", "isTrue": false },
+            { "text": "South Korea", "isTrue": false }
+          ]
+        },
+        {
+          "id": "q-2-2",
+          "question": "Welke vlag heeft een esdoornblad?",
+          "answers": [
+            { "text": "Canada", "isTrue": true },
+            { "text": "USA", "isTrue": false },
+            { "text": "Australia", "isTrue": false },
+            { "text": "New Zealand", "isTrue": false }
+          ]
+        },
+        {
+          "id": "q-2-3",
+          "question": "Welke vlag is groen, wit, oranje (verticaal)?",
+          "answers": [
+            { "text": "Ireland", "isTrue": true },
+            { "text": "Italy", "isTrue": false },
+            { "text": "India", "isTrue": false },
+            { "text": "Ivory Coast", "isTrue": false }
+          ]
+        },
+        {
+          "id": "q-2-4",
+          "question": "Welke vlag heeft een blauw kruis op een witte achtergrond?",
+          "answers": [
+            { "text": "Finland", "isTrue": true },
+            { "text": "Sweden", "isTrue": false },
+            { "text": "Greece", "isTrue": false },
+            { "text": "Norway", "isTrue": false }
+          ]
+        },
+        {
+          "id": "q-2-5",
+          "question": "Welke vlag heeft een gele ster op een rode achtergrond?",
+          "answers": [
+            { "text": "Vietnam", "isTrue": true },
+            { "text": "China", "isTrue": false },
+            { "text": "North Korea", "isTrue": false },
+            { "text": "Macedonia", "isTrue": false }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "theme-3",
+      "name": "Football Club Logos",
+      "questions": [
+        {
+          "id": "q-3-1",
+          "question": "Welke club heeft een kanon in het logo?",
+          "answers": [
+            { "text": "Arsenal", "isTrue": true },
+            { "text": "Manchester United", "isTrue": false },
+            { "text": "Chelsea", "isTrue": false },
+            { "text": "Liverpool", "isTrue": false }
+          ]
+        },
+        {
+          "id": "q-3-2",
+          "question": "Welke club heeft een duivel in het logo?",
+          "answers": [
+            { "text": "Manchester United", "isTrue": true },
+            { "text": "Bayern Munich", "isTrue": false },
+            { "text": "Barcelona", "isTrue": false },
+            { "text": "PSG", "isTrue": false }
+          ]
+        },
+        {
+          "id": "q-3-3",
+          "question": "Welke club heeft een vogel (liver bird) in het logo?",
+          "answers": [
+            { "text": "Liverpool", "isTrue": true },
+            { "text": "Tottenham Hotspur", "isTrue": false },
+            { "text": "Juventus", "isTrue": false },
+            { "text": "Ajax", "isTrue": false }
+          ]
+        },
+        {
+          "id": "q-3-4",
+          "question": "Welke club heeft een blauwe leeuw in het logo?",
+          "answers": [
+            { "text": "Chelsea", "isTrue": true },
+            { "text": "Manchester City", "isTrue": false },
+            { "text": "Everton", "isTrue": false },
+            { "text": "Inter Milan", "isTrue": false }
+          ]
+        },
+        {
+          "id": "q-3-5",
+          "question": "Welke club heeft een rode en blauwe verticale streep met een gele bal?",
+          "answers": [
+            { "text": "FC Barcelona", "isTrue": true },
+            { "text": "Atletico Madrid", "isTrue": false },
+            { "text": "AC Milan", "isTrue": false },
+            { "text": "Roma", "isTrue": false }
+          ]
+        }
+      ]
+    }
+  ]
+}
