@@ -3,17 +3,44 @@ body {
 }
 
 .intro {
+    display: flex;
+    justify-content: center;
   margin: 0 auto;
   width: 40%;
 
   text-align: center;
 }
 
+
+
+.game-intro {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.game-intro__image {
+    width: 100%;
+}
+
+.answers {
+
+    display: grid;
+    gap: 0.2rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    .answer {
+        width: 100%;
+    padding: 0.5rem;
+}
+}
+
+
+
 .btn {
   background-color: #4caf50; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 10rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -66,13 +93,7 @@ body {
   color: #007bff;
 }
 
-.intro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-  padding-top: 2rem;
-}
+
 
 .intro__container-buttons {
   display: inline-flex;
