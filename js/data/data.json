@@ -6,7 +6,8 @@
       "questions": [
         {
           "id": "q-1-1",
-          "question": "Welke game heeft deze cover?",
+          "question": "Welke game is dit?",
+          "image": "../../assets/images/questions/games/thewitcher3.jpg",
           "answers": [
             { "text": "The Witcher 3", "isTrue": true },
             { "text": "Skyrim", "isTrue": false },
@@ -16,7 +17,8 @@
         },
         {
           "id": "q-1-2",
-          "question": "Welke game toont een man in een groene harnas op de cover?",
+          "question": "Welke game heeft deze cover?",
+          "image": "../../assets/images/questions/games/halo.jpg",
           "answers": [
             { "text": "Halo", "isTrue": true },
             { "text": "Doom", "isTrue": false },
@@ -26,7 +28,8 @@
         },
         {
           "id": "q-1-3",
-          "question": "Welke game heeft een pickaxe op de cover?",
+          "question": "Welke game heeft deze cover?",
+          "image": "../../assets/images/questions/games/minecraft.jpg",
           "answers": [
             { "text": "Minecraft", "isTrue": true },
             { "text": "Fortnite", "isTrue": false },
@@ -36,7 +39,8 @@
         },
         {
           "id": "q-1-4",
-          "question": "Welke game toont een cowboy op de cover?",
+          "question": "Welke game is dit?",
+          "image": "../../assets/images/questions/games/reddeadredemption2.jpg",
           "answers": [
             { "text": "Red Dead Redemption 2", "isTrue": true },
             { "text": "Far Cry 5", "isTrue": false },
@@ -46,7 +50,8 @@
         },
         {
           "id": "q-1-5",
-          "question": "Welke game heeft een vrouw met boog op de cover?",
+          "question": "Welke game is dit?",
+          "image": "../../assets/images/questions/games/gtav.jpg",
           "answers": [
             { "text": "GTA V", "isTrue": true },
             { "text": "Tomb Raider", "isTrue": false },
@@ -63,6 +68,7 @@
         {
           "id": "q-2-1",
           "question": "Welke vlag is dit?",
+          "image": "../../assets/images/questions/flags/japan.png",
           "answers": [
             { "text": "Japan", "isTrue": true },
             { "text": "Bangladesh", "isTrue": false },
@@ -73,6 +79,7 @@
         {
           "id": "q-2-2",
           "question": "Welke vlag is dit?",
+          "image": "../../assets/images/questions/flags/canada.png",
           "answers": [
             { "text": "Canada", "isTrue": true },
             { "text": "USA", "isTrue": false },
@@ -83,6 +90,7 @@
         {
           "id": "q-2-3",
           "question": "Welke vlag is dit?",
+          "image": "../../assets/images/questions/flags/fiji.png",
           "answers": [
             { "text": "Fiji", "isTrue": true },
             { "text": "Italy", "isTrue": false },
@@ -93,6 +101,7 @@
         {
           "id": "q-2-4",
           "question": "Welke vlag is dit?",
+          "image": "../../assets/images/questions/flags/finland.png",
           "answers": [
             { "text": "Finland", "isTrue": true },
             { "text": "Sweden", "isTrue": false },
@@ -103,6 +112,7 @@
         {
           "id": "q-2-5",
           "question": "Welke vlag is dit?",
+          "image": "../../assets/images/questions/flags/vietnam.png",
           "answers": [
             { "text": "Vietnam", "isTrue": true },
             { "text": "China", "isTrue": false },
@@ -119,6 +129,7 @@
         {
           "id": "q-3-1",
           "question": "Welke club is dit?",
+          "image": "../../assets/images/questions/sport/arsenal.jpg",
           "answers": [
             { "text": "Arsenal", "isTrue": true },
             { "text": "Manchester United", "isTrue": false },
@@ -129,6 +140,7 @@
         {
           "id": "q-3-2",
           "question": "Welke club is dit?",
+          "image": "../../assets/images/questions/sport/manchesterunited.png",
           "answers": [
             { "text": "Manchester United", "isTrue": true },
             { "text": "Bayern Munich", "isTrue": false },
@@ -139,6 +151,7 @@
         {
           "id": "q-3-3",
           "question": "Welke club is dit?",
+          "image": "../../assets/images/questions/sport/intermilan.png",
           "answers": [
             { "text": "Inter Milan", "isTrue": true },
             { "text": "Tottenham Hotspur", "isTrue": false },
@@ -149,6 +162,7 @@
         {
           "id": "q-3-4",
           "question": "Welke club is?",
+          "image": "../../assets/images/questions/sport/chelsea.png",
           "answers": [
             { "text": "Chelsea", "isTrue": true },
             { "text": "Manchester City", "isTrue": false },
@@ -159,6 +173,7 @@
         {
           "id": "q-3-5",
           "question": "Welke club is dit?",
+          "image": "../../assets/images/questions/sport/barcelona.png",
           "answers": [
             { "text": "FC Barcelona", "isTrue": true },
             { "text": "Atletico Madrid", "isTrue": false },
