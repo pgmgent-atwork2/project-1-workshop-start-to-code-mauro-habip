@@ -7,7 +7,7 @@ export const data = {
         {
           "id": "q-1-1",
           "question": "Welke game is dit?",
-          "image": "../../assets/images/questions/games/thewitcher3.jpg",
+          "image": "assets/images/questions/games/thewitcher3.jpg",
           "answers": [
             { "text": "The Witcher 3", "isTrue": true },
             { "text": "Skyrim", "isTrue": false },
@@ -18,7 +18,7 @@ export const data = {
         {
           "id": "q-1-2",
           "question": "Welke game heeft deze cover?",
-          "image": "../../assets/images/questions/games/halo.jpg",
+          "image": "assets/images/questions/games/halo.jpg",
           "answers": [
             { "text": "Halo", "isTrue": true },
             { "text": "Doom", "isTrue": false },
@@ -29,7 +29,7 @@ export const data = {
         {
           "id": "q-1-3",
           "question": "Welke game heeft deze cover?",
-          "image": "../../assets/images/questions/games/minecraft.jpg",
+          "image": "assets/images/questions/games/minecraft.jpg",
           "answers": [
             { "text": "Minecraft", "isTrue": true },
             { "text": "Fortnite", "isTrue": false },
@@ -40,7 +40,7 @@ export const data = {
         {
           "id": "q-1-4",
           "question": "Welke game is dit?",
-          "image": "../../assets/images/questions/games/reddeadredemption2.jpg",
+          "image": "assets/images/questions/games/reddeadredemption2.jpg",
           "answers": [
             { "text": "Red Dead Redemption 2", "isTrue": true },
             { "text": "Far Cry 5", "isTrue": false },
@@ -51,7 +51,7 @@ export const data = {
         {
           "id": "q-1-5",
           "question": "Welke game is dit?",
-          "image": "../../assets/images/questions/games/gtav.jpg",
+          "image": "assets/images/questions/games/gtav.jpg",
           "answers": [
             { "text": "GTA V", "isTrue": true },
             { "text": "Tomb Raider", "isTrue": false },
