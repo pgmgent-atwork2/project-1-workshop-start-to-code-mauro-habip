@@ -69,6 +69,7 @@ if (
 
         document.querySelectorAll(".answer").forEach((button) => {
           button.addEventListener("click", () => {
+
             document
               .querySelectorAll(".answer")
               .forEach((btn) => (btn.disabled = true));
