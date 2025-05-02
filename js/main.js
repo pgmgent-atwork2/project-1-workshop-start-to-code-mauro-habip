@@ -72,13 +72,17 @@ if (
             document
               .querySelectorAll(".answer")
               .forEach((btn) => (btn.disabled = true));
-            if (
-              button.textContent === current.answers.find((a) => a.isTrue).text
-            ) {
-              button.style.backgroundColor = "green";
+            const goodAnswer = current.answers.find((a) => a.isTrue).text;
+            document.querySelectorAll(".answer").forEach((btn) => {
+              if (btn.textContent === goodAnswer) {
+              btn.style.backgroundColor = "green";
+              }
+              if (btn === button && btn.textContent !== goodAnswer) {
+              btn.style.backgroundColor = "red"; 
+              }
+            });
+            if (button.textContent === goodAnswer) {
               rightAnswers++;
-            } else {
-              button.style.backgroundColor = "red";
             }
 
             currentQuestionIndex++;
