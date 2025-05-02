@@ -50,4 +50,6 @@ pre {
   margin: 0;
   white-space: pre-wrap;
   font-family: "Courier New", Courier, monospace;
+  max-height: 20rem;
+  overflow-y: auto;
 }
