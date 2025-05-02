@@ -81,30 +81,41 @@ body {
 main {
     flex: 1;
     padding: 2rem;
-    max-width: 1200px;
+
     margin: 0 auto;
     width: 100%;
 }
 
-.intro {
+.intro, .start-game {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    min-height: 60vh;
+
     text-align: center;
+}
+.start-game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro__image {
+    width: 80%;
 }
 
 .btn {
+    text-decoration: none;
     padding: 1rem 2rem;
     border: none;
-    border-radius: 50px;
+    border-radius: 3rem;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: var(--transition);
-    width: 200px;
+
+    width: 12.5rem;
     text-align: center;
     box-shadow: var(--shadow);
 }
@@ -130,11 +141,14 @@ main {
 }
 
 .game-intro {
+    height: 80%;
+    width: 100%;
+    box-sizing: border-box;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 0.5rem;
     padding: 2rem;
     box-shadow: var(--shadow);
-    max-width: 800px;
+    max-width: 40rem;
     margin: 0 auto;
     text-align: center;
 }
@@ -190,7 +204,8 @@ main {
     display: none !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
+
     .header {
         flex-direction: column;
         padding: 1rem;
@@ -214,6 +229,20 @@ main {
         max-width: 200px;
     }
 }
+
+.intro__landing {
+    margin: 2rem;
+}
+@media (min-width: 60rem) {
+
+
+    .intro {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
 .code-container {
     position: relative;
     background-color: #2d2d2d;
@@ -225,7 +254,7 @@ main {
   }
   
   .copy-btn {
-    position: absolute;
+
     top: 0.6rem;
     right: 0.6rem;
     background-color: #61dafb;
