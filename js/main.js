@@ -16,7 +16,7 @@ function copyCode(buttonId) {
   navigator.clipboard.writeText(code).then(() => {
     button.innerText = "Copied!";
     setTimeout(() => {
-      button.innerText = "Copy";
+      button.innerText = "Kopieer";
     }, 2000);
   });
 }
