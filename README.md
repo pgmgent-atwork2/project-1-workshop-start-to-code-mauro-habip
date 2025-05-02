@@ -19,7 +19,7 @@ quiz-game/ ├── css/ │ └── main.css ├── js/ │ └── mai
 
 ### 1. Je Bestanden Instellen
 
-Maak de bovenstaande mappen en bestanden aan in je projectmap. Gebruik een teksteditor zoals VS Code, Notepad of Sublime Text.
+Maak de bovenstaande mappen en bestanden aan in je projectmap. Gebruik de teksteditor VSCode.
 
 ### 2. De HTML-structuur Maken
 
