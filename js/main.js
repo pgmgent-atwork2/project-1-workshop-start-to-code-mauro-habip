@@ -92,7 +92,8 @@ if (
               setTimeout(() => {
                 $gameIntro.innerHTML = `
                   <h2>Quiz afgelopen!</h2>
-                  <p>Je hebt ${rightAnswers} van de ${themeData.questions.length} vragen goed beantwoord.</p>
+                  <p class="return-text">Je hebt ${rightAnswers} van de ${themeData.questions.length} vragen goed beantwoord.</p>
+                  <a href="game.html" class=" btn btn-return btn-blue">Speel opniew</a>
                 `;
               }, 1500);
             }
