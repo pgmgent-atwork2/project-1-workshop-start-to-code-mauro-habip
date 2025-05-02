@@ -86,25 +86,117 @@
             </div>
             <div class="tutorial-step">
                 <h2>Stap 1: Basis HTML Structuur</h2>
-                <p>Laten we beginnen met het maken van de basisstructuur van onze quiz. Maak een nieuw HTML-bestand aan
-                    genaamd <code>game.html</code> en voeg de volgende code toe:</p>
+                <p>Laten we beginnen met het maken van de basisstructuur van onze quiz. Volg de onderstaande stappen:
+                </p>
 
+                <h3>1. Maak een nieuw HTML-bestand aan</h3>
+                <p>Open je projectmap in Visual Studio Code. Klik met de rechtermuisknop op de map en kies <strong>New
+                        File</strong>. Geef het bestand de naam <code>game.html</code>.</p>
+
+                <h3>2. Voeg de standaard HTML-structuur toe</h3>
+                <p>Open het bestand <code>game.html</code>. Typ een uitroepteken (<code>!</code>) en druk op de
+                    <strong>Tab</strong>-toets. Dit genereert automatisch de basis HTML-structuur:
+                </p>
                 <div class="code-container">
                     <button class="copy-btn" onclick="copyCode(this)">Kopieer</button>
                     <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </div>
 
+                <h3>3. Pas de <code>&lt;head&gt;</code> sectie aan</h3>
+                <p>Voeg een link toe naar je CSS-bestand en geef de pagina een titel. Je <code>&lt;head&gt;</code>
+                    sectie ziet er nu zo uit:</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode(this)">Kopieer</button>
+                    <pre><code>&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Game&lt;/title&gt;
+    &lt;link rel="stylesheet" href="./css/main.css"&gt;
+&lt;/head&gt;</code></pre>
+                </div>
+
+                <h3>4. Voeg een header toe</h3>
+                <p>Voeg een <code>&lt;header&gt;</code> toe met een titel en een navigatiebalk:</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode(this)">Kopieer</button>
+                    <pre><code>&lt;header class="header"&gt;
+    &lt;div class="header__logo"&gt;
+        &lt;h1 class="header__title"&gt;De Slimste Student&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;nav class="header__nav"&gt;
+        &lt;ul class="header__nav-list"&gt;
+            &lt;li class="header__nav-item"&gt;
+                &lt;a class="header__nav-link" href="./"&gt;Home&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="header__nav-item"&gt;
+                &lt;a class="header__nav-link active" href="./game.html"&gt;Game&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="header__nav-item"&gt;
+                &lt;a class="header__nav-link" href="./tutorial.html"&gt;Tutorial&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+                </div>
+
+                <h3>5. Voeg een main-sectie toe</h3>
+                <p>Voeg een <code>&lt;main&gt;</code> toe met een introductie en knoppen voor de verschillende
+                    quizcategorieën:</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode(this)">Kopieer</button>
+                    <pre><code>&lt;main&gt;
+    &lt;div class="game-intro hidden" id="game-intro"&gt;&lt;/div&gt;
+    &lt;section class="intro" id="intro"&gt;
+        &lt;button class="btn btn-blue" id="sports"&gt;Sport&lt;/button&gt;
+        &lt;button class="btn btn-yellow" id="countries"&gt;Vlaggen&lt;/button&gt;
+        &lt;button class="btn btn-orange" id="games"&gt;Games&lt;/button&gt;
+    &lt;/section&gt;
+&lt;/main&gt;</code></pre>
+                </div>
+
+                <h3>6. Voeg een footer toe</h3>
+                <p>Voeg een <code>&lt;footer&gt;</code> toe met een korte tekst:</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode(this)">Kopieer</button>
+                    <pre><code>&lt;footer class="footer"&gt;
+    &lt;p class="footer__text"&gt;Gemaakt door [Jouw Naam] uit [Jouw Klas]&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+                </div>
+
+                <h3>7. Voeg een script toe</h3>
+                <p>Voeg een <code>&lt;script&gt;</code> tag toe onderaan in de <b>body</b> tag om je JavaScript-bestand
+                    te koppelen:</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode(this)">Kopieer</button>
+                    <pre><code> &lt;script src="./js/main.js" type="module"&gt;&lt;/script&gt; 
+&lt;/body&gt; </code></pre>
+                </div>
+
+                <h3>8. Volledige HTML-structuur</h3>
+                <p>Je <code>game.html</code> bestand ziet er nu als volgt uit:</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode(this)">Kopieer</button>
+                    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
     &lt;title&gt;Game&lt;/title&gt;
     &lt;link rel="stylesheet" href="./css/main.css"&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
     &lt;header class="header"&gt;
         &lt;div class="header__logo"&gt;
-            &lt;h1 class="header__title"&gt;De Slimste student&lt;/h1&gt;
+            &lt;h1 class="header__title"&gt;De Slimste Student&lt;/h1&gt;
         &lt;/div&gt;
         &lt;nav class="header__nav"&gt;
             &lt;ul class="header__nav-list"&gt;
@@ -120,103 +212,108 @@
             &lt;/ul&gt;
         &lt;/nav&gt;
     &lt;/header&gt;
-
     &lt;main&gt;
-        &lt;div class="game-intro hidden" id="game-intro"&gt;
-
-        &lt;/div&gt;
+        &lt;div class="game-intro hidden" id="game-intro"&gt;&lt;/div&gt;
         &lt;section class="intro" id="intro"&gt;
             &lt;button class="btn btn-blue" id="sports"&gt;Sport&lt;/button&gt;
             &lt;button class="btn btn-yellow" id="countries"&gt;Vlaggen&lt;/button&gt;
             &lt;button class="btn btn-orange" id="games"&gt;Games&lt;/button&gt;
         &lt;/section&gt;
     &lt;/main&gt;
-
     &lt;footer class="footer"&gt;
         &lt;p class="footer__text"&gt;Gemaakt door [Jouw Naam] uit [Jouw Klas]&lt;/p&gt;
     &lt;/footer&gt;
     &lt;script src="./js/main.js" type="module"&gt;&lt;/script&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;</code></pre>
                 </div>
-                <p>Dit is de basisstructuur van onze quiz. We hebben een header met navigatie, een main sectie met
+                <p>Dit is de basisstructuur van onze quiz. We hebben een header met navigatie, een main-sectie met
                     knoppen voor verschillende quizthema's, en een footer.</p>
             </div>
 
             <div class="tutorial-step">
                 <h2>Stap 2: CSS Styling</h2>
-                <p>Maak een <code>main.css</code> bestand aan in de <code>css</code> map en kopieer de volgende CSS code
-                    in één keer:</p>
+                <p>Maak een <code>main.css</code> bestand aan in de <code>css</code> map en kopieer de volgende CSS
+                    code. Hieronder wordt elk deel van de CSS uitgelegd:</p>
 
+                <h3>1. Variabelen</h3>
+                <p>In dit deel definiëren we CSS-variabelen voor kleuren, schaduwen en overgangen. Dit maakt het
+                    makkelijker om consistentie te behouden en later wijzigingen aan te brengen:</p>
                 <div class="code-container">
                     <button class="copy-btn" onclick="copyCode(this)">Kopieer</button>
                     <pre><code>:root {
-    --primary: #2c3e50;
-    --secondary: #3498db;
-    --accent: #e74c3c;
-    --light: #ecf0f1;
-    --dark: #2c3e50;
-    --success: #2ecc71;
-    --warning: #f39c12;
-    --text: #333;
-    --text-light: #7f8c8d;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s ease;
-}
+    --primary: #2c3e50; /* Hoofdkleur voor header en footer */
+    --secondary: #3498db; /* Blauwe kleur voor knoppen */
+    --accent: #e74c3c; /* Rode kleur voor accenten */
+    --light: #ecf0f1; /* Lichte achtergrondkleur */
+    --dark: #2c3e50; /* Donkere tekstkleur */
+    --success: #2ecc71; /* Groene kleur voor correcte antwoorden */
+    --warning: #f39c12; /* Gele kleur voor waarschuwingen */
+    --text: #333; /* Standaard tekstkleur */
+    --text-light: #7f8c8d; /* Lichtere tekstkleur */
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Schaduw voor elementen */
+    --transition: all 0.3s ease; /* Soepele overgang voor hover-effecten */
+}</code></pre>
+                </div>
 
-* {
+                <h3>2. Algemene Stijlen</h3>
+                <p>Hier worden de standaardinstellingen voor marges, padding en lettertypen ingesteld:</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode(this)">Kopieer</button>
+                    <pre><code>* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Zorgt ervoor dat padding en border binnen de breedte vallen */
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: var(--text);
-    background-color: #f5f7fa;
-    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Moderne lettertype */
+    line-height: 1.6; /* Ruimte tussen regels */
+    color: var(--text); /* Standaard tekstkleur */
+    background-color: #f5f7fa; /* Lichte achtergrondkleur */
+    min-height: 100vh; /* Zorgt ervoor dat de body altijd de volledige hoogte heeft */
     display: flex;
-    flex-direction: column;
-}
+    flex-direction: column; /* Zorgt ervoor dat de inhoud verticaal wordt gestapeld */
+}</code></pre>
+                </div>
 
-.header {
-    background-color: var(--primary);
-    color: white;
-    padding: 1rem 2rem;
-    box-shadow: var(--shadow);
+                <h3>3. Header</h3>
+                <p>De header bevat de titel en navigatiebalk. Hier wordt de styling voor de header-elementen beschreven:
+                </p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode(this)">Kopieer</button>
+                    <pre><code>.header {
+    background-color: var(--primary); /* Donkerblauwe achtergrond */
+    color: white; /* Witte tekstkleur */
+    padding: 1rem 2rem; /* Ruimte binnen de header */
+    box-shadow: var(--shadow); /* Schaduw onder de header */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* Ruimte tussen titel en navigatie */
+    align-items: center; /* Verticaal centreren */
 }
 
 .header__title {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.5rem; /* Grotere tekst voor de titel */
+    font-weight: 600; /* Dikkere tekst */
 }
 
 .header__nav-list {
     display: flex;
-    list-style: none;
-    gap: 1.5rem;
+    list-style: none; /* Verwijdert standaard opsommingstekens */
+    gap: 1.5rem; /* Ruimte tussen navigatie-items */
 }
 
 .header__nav-link {
     color: white;
-    text-decoration: none;
+    text-decoration: none; /* Verwijdert onderstreping */
     font-weight: 500;
     padding: 0.5rem 0;
     position: relative;
-    transition: var(--transition);
+    transition: var(--transition); /* Soepele overgang bij hover */
 }
 
 .header__nav-link:hover {
-    color: var(--light);
-}
-
-.header__nav-link.active {
-    color: var(--light);
+    color: var(--light); /* Verandert kleur bij hover */
 }
 
 .header__nav-link.active::after {
@@ -226,14 +323,19 @@ body {
     left: 0;
     width: 100%;
     height: 3px;
-    background-color: var(--accent);
-}
+    background-color: var(--accent); /* Rode lijn onder actieve link */
+}</code></pre>
+                </div>
 
-main {
-    flex: 1;
+                <h3>4. Main en Introductie</h3>
+                <p>De main-sectie bevat de inhoud van de pagina, inclusief de introductie en knoppen:</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode(this)">Kopieer</button>
+                    <pre><code>main {
+    flex: 1; /* Zorgt ervoor dat de main-sectie de resterende ruimte inneemt */
     padding: 2rem;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; /* Centreert de inhoud */
     width: 100%;
 }
 
@@ -242,114 +344,80 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    min-height: 60vh;
+    gap: 1.5rem; /* Ruimte tussen elementen */
+    min-height: 60vh; /* Zorgt voor voldoende ruimte */
     text-align: center;
-}
+}</code></pre>
+                </div>
 
-.btn {
+                <h3>5. Knoppen</h3>
+                <p>De knoppen hebben een moderne uitstraling met afgeronde hoeken en hover-effecten:</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode(this)">Kopieer</button>
+                    <pre><code>.btn {
     padding: 1rem 2rem;
     border: none;
-    border-radius: 50px;
+    border-radius: 50px; /* Maakt de knoppen afgerond */
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: var(--transition);
+    transition: var(--transition); /* Soepele overgang bij hover */
     width: 200px;
     text-align: center;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow); /* Schaduw voor diepte-effect */
 }
 
 .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px); /* Verplaatst de knop iets omhoog bij hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Versterkt de schaduw */
 }
 
 .btn-blue {
-    background-color: var(--secondary);
+    background-color: var(--secondary); /* Blauwe knop */
     color: white;
 }
 
 .btn-yellow {
-    background-color: var(--warning);
+    background-color: var(--warning); /* Gele knop */
     color: white;
 }
 
 .btn-orange {
-    background-color: var(--accent);
+    background-color: var(--accent); /* Rode knop */
     color: white;
-}
+}</code></pre>
+                </div>
 
-.game-intro {
-    background-color: white;
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: var(--shadow);
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.game-intro h2 {
-    margin-bottom: 1.5rem;
-    color: var(--primary);
-}
-
-.game-intro__image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 1rem 0;
-    box-shadow: var(--shadow);
-}
-
-.answers {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-.answer {
-    padding: 1rem;
-    border: 2px solid var(--light);
-    border-radius: 8px;
-    background-color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.answer:hover {
-    background-color: var(--light);
-    border-color: var(--secondary);
-}
-
-.footer {
-    background-color: var(--primary);
-    color: white;
+                <h3>6. Footer</h3>
+                <p>De footer bevat een eenvoudige tekst en is gestyled om consistent te zijn met de header:</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode(this)">Kopieer</button>
+                    <pre><code>.footer {
+    background-color: var(--primary); /* Donkerblauwe achtergrond */
+    color: white; /* Witte tekstkleur */
     text-align: center;
     padding: 1rem;
-    margin-top: auto;
+    margin-top: auto; /* Zorgt ervoor dat de footer altijd onderaan staat */
 }
 
 .footer__text {
-    font-size: 0.9rem;
-}
+    font-size: 0.9rem; /* Kleinere tekstgrootte */
+}</code></pre>
+                </div>
 
-.hidden {
-    display: none !important;
-}
-
-@media (max-width: 768px) {
+                <h3>7. Responsiviteit</h3>
+                <p>Met media queries zorgen we ervoor dat de layout goed werkt op kleinere schermen:</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode(this)">Kopieer</button>
+                    <pre><code>@media (max-width: 768px) {
     .header {
-        flex-direction: column;
+        flex-direction: column; /* Stapelt de header-inhoud verticaal */
         padding: 1rem;
         gap: 1rem;
     }
 
     .header__nav-list {
-        gap: 1rem;
+        gap: 1rem; /* Minder ruimte tussen navigatie-items */
     }
 
     main {
@@ -357,23 +425,134 @@ main {
     }
 
     .intro {
-        min-height: 50vh;
+        min-height: 50vh; /* Vermindert de hoogte van de introductie */
     }
 
     .btn {
-        width: 100%;
+        width: 100%; /* Knoppen nemen de volledige breedte in */
         max-width: 200px;
     }
 }</code></pre>
                 </div>
-                <p>Deze CSS zorgt voor de styling van onze quiz applicatie.</p>
+
+                <p>Deze CSS zorgt voor een moderne en responsieve styling van je quiz applicatie.</p>
             </div>
 
             <div class="tutorial-step">
                 <h2>Stap 3: Quiz Data</h2>
-                <p>Maak een <code>data.js</code> bestand aan in de <code>js/data</code> map en kopieer de volgende code
-                    in één keer:</p>
+                <p>Maak een <code>data.js</code> bestand aan in de <code>js/data</code> map en kopieer de volgende code.
+                    Hieronder wordt uitgelegd wat elk deel van de data doet:</p>
 
+                <h3>1. Structuur van de data</h3>
+                <p>De data is een JavaScript-object dat alle informatie bevat voor de quiz. Het is opgebouwd uit een
+                    lijst van thema's, elk met een unieke <code>id</code>, een <code>name</code>, en een lijst met
+                    <code>questions</code>.
+                </p>
+
+                <h3>2. Thema's</h3>
+                <p>Elk thema bevat:
+                <ul>
+                    <li><code>id</code>: Een unieke identifier voor het thema (bijvoorbeeld <code>"games"</code>).</li>
+                    <li><code>name</code>: De naam van het thema (bijvoorbeeld <code>"Game-covers"</code>).</li>
+                    <li><code>questions</code>: Een lijst met vragen die bij dit thema horen.</li>
+                </ul>
+                </p>
+
+                <h3>3. Vragen</h3>
+                <p>Elke vraag bevat:
+                <ul>
+                    <li><code>id</code>: Een unieke identifier voor de vraag (bijvoorbeeld <code>"q-1-1"</code>).</li>
+                    <li><code>question</code>: De tekst van de vraag.</li>
+                    <li><code>image</code>: De URL naar een afbeelding die bij de vraag hoort.</li>
+                    <li><code>answers</code>: Een lijst met mogelijke antwoorden.</li>
+                </ul>
+                </p>
+
+                <h3>4. Antwoorden</h3>
+                <p>Elk antwoord is een object met:
+                <ul>
+                    <li><code>text</code>: De tekst van het antwoord.</li>
+                    <li><code>isTrue</code>: Een boolean die aangeeft of het antwoord correct is (<code>true</code>) of
+                        niet (<code>false</code>).</li>
+                </ul>
+                </p>
+
+                <p>Deze data wordt gebruikt om de quizvragen en antwoorden dynamisch te genereren in de applicatie.</p>
+
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode(this)">Kopieer</button>
+                    <pre><code>export const data = {
+  "themes": [
+    {
+      "id": "games",
+      "name": "Game-covers",
+      "questions": [
+        {
+          "id": "q-1-1",
+          "question": "Welke game is dit?",
+          "image": "assets/images/questions/games/thewitcher3.jpg",
+          "answers": [
+            { "text": "The Witcher 3", "isTrue": true },
+            { "text": "Skyrim", "isTrue": false },
+            { "text": "Cyberpunk 2077", "isTrue": false },
+            { "text": "Red Dead Redemption 2", "isTrue": false }
+          ]
+        },
+        {
+          "id": "q-1-2",
+          "question": "Welke game heeft deze cover?",
+          "image": "assets/images/questions/games/halo.jpg",
+          "answers": [
+            { "text": "Halo", "isTrue": true },
+            { "text": "Doom", "isTrue": false },
+            { "text": "Crysis", "isTrue": false },
+            { "text": "Call of Duty", "isTrue": false }
+          ]
+        },
+        // Meer vragen...
+      ]
+    },
+    {
+      "id": "flags",
+      "name": "Flags",
+      "questions": [
+        {
+          "id": "q-2-1",
+          "question": "Welke vlag is dit?",
+          "image": "assets/images/questions/flags/japan.png",
+          "answers": [
+            { "text": "Japan", "isTrue": true },
+            { "text": "Bangladesh", "isTrue": false },
+            { "text": "China", "isTrue": false },
+            { "text": "South Korea", "isTrue": false }
+          ]
+        },
+        // Meer vragen...
+      ]
+    },
+    {
+      "id": "sports",
+      "name": "Football Club Logos",
+      "questions": [
+        {
+          "id": "q-3-1",
+          "question": "Welke club is dit?",
+          "image": "assets/images/questions/sport/arsenal.jpg",
+          "answers": [
+            { "text": "Arsenal", "isTrue": true },
+            { "text": "Manchester United", "isTrue": false },
+            { "text": "Chelsea", "isTrue": false },
+            { "text": "Liverpool", "isTrue": false }
+          ]
+        },
+        // Meer vragen...
+      ]
+    }
+  ]
+};</code></pre>
+                </div>
+
+                <p>Hieronder vind je de volledige originele quizdata:</p>
                 <div class="code-container">
                     <button class="copy-btn" onclick="copyCode(this)">Kopieer</button>
                     <pre><code>export const data = {
@@ -564,11 +743,11 @@ main {
   ]
 };</code></pre>
                 </div>
-                <p>Dit bestand bevat alle quizvragen en antwoorden voor de verschillende thema's.</p>
             </div>
+
             <div class="tutorial-step">
                 <h2>Stap 4: JavaScript - Basisstructuur</h2>
-                <p>Maak nu een JavaScript-bestand aan genaamd <code>main.js</code> in de <code>js</code> map. Voeg eerst
+                <p>Maak een JavaScript-bestand aan genaamd <code>main.js</code> in de <code>js</code> map. Voeg eerst
                     de basisstructuur toe:</p>
 
                 <div class="code-container">
@@ -596,7 +775,9 @@ if (
   // Hier komt onze quiz logica
 }</code></pre>
                 </div>
-                <p>We importeren eerst de quizdata en selecteren de belangrijke HTML-elementen die we nodig hebben.</p>
+                <p>In deze stap importeren we de quizdata en selecteren we de belangrijke HTML-elementen die we nodig
+                    hebben. We controleren of alle elementen bestaan en initialiseren enkele variabelen die we later
+                    gebruiken in de quizlogica.</p>
             </div>
 
             <div class="tutorial-step">
@@ -623,16 +804,16 @@ if (
       const current = themeData.questions[currentQuestionIndex];
 
       $gameIntro.innerHTML = `
-        &lt;h2&gt;${current.question}&lt;/h2&gt;
-        &lt;img class="game-intro__image" src="${
+        <h2>${current.question}</h2>
+        <img class="game-intro__image" src="${
           current.image
-        }" alt="Question Image"&gt;
-        &lt;div class="answers"&gt;
+        }" alt="Question Image">
+        <div class="answers">
           ${current.answers
             .sort(() => 0.5 - Math.random())
-            .map((answer) => `&lt;button class="answer"&gt;${answer.text}&lt;/button&gt;`)
+            .map((answer) => `<button class="answer">${answer.text}</button>`)
             .join("")}
-        &lt;/div&gt;
+        </div>
       `;
 
       // Hier komt de antwoord logica
@@ -643,7 +824,8 @@ if (
 }</code></pre>
                 </div>
                 <p>Deze functie zorgt ervoor dat wanneer een themaknop wordt geklikt, de juiste vragen worden geladen en
-                    weergegeven.</p>
+                    weergegeven. De functie haalt de gegevens van het geselecteerde thema op en toont de eerste vraag.
+                </p>
             </div>
 
             <div class="tutorial-step">
@@ -667,21 +849,22 @@ if (
     }
 
     currentQuestionIndex++;
-    if (currentQuestionIndex &lt; themeData.questions.length) {
+    if (currentQuestionIndex < themeData.questions.length) {
       setTimeout(showQuestion, 1500);
     } else {
       setTimeout(() => {
         $gameIntro.innerHTML = `
-          &lt;h2&gt;Quiz afgelopen!&lt;/h2&gt;
-          &lt;p&gt;Je hebt ${rightAnswers} van de ${themeData.questions.length} vragen goed beantwoord.&lt;/p&gt;
+          <h2>Quiz afgelopen!</h2>
+          <p>Je hebt ${rightAnswers} van de ${themeData.questions.length} vragen goed beantwoord.</p>
         `;
       }, 1500);
     }
   });
 });</code></pre>
                 </div>
-                <p>Deze code controleert of het gegeven antwoord correct is, geeft visuele feedback en gaat door naar de
-                    volgende vraag of toont het eindresultaat.</p>
+                <p>Deze code controleert of het gegeven antwoord correct is, geeft visuele feedback (groen voor correct,
+                    rood voor fout) en gaat door naar de volgende vraag of toont het eindresultaat als de quiz is
+                    afgelopen.</p>
             </div>
 
             <div class="tutorial-step">
@@ -694,7 +877,104 @@ if (
 setupQuiz($sportsButton, "sports");
 setupQuiz($countryButton, "flags");</code></pre>
                 </div>
-                <p>Hiermee worden de event listeners aan de knoppen gekoppeld.</p>
+                <p>Met deze code worden de event listeners aan de knoppen gekoppeld, zodat de gebruiker een thema kan
+                    selecteren en de quiz kan starten.</p>
+            </div>
+
+            <div class="tutorial-step">
+                <h2>Stap 8: Volledig JavaScript Bestand</h2>
+                <p>Hieronder vind je het volledige JavaScript-bestand dat alle stappen combineert. Kopieer deze code
+                    naar je <code>main.js</code> bestand in de <code>js</code> map:</p>
+
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode(this)">Kopieer</button>
+                    <pre><code>import { data } from "./data/data.js";
+
+const $gamesButton = document.getElementById("games");
+const $sportsButton = document.getElementById("sports");
+const $countryButton = document.getElementById("countries");
+
+const $quizIntro = document.getElementById("intro");
+const $gameIntro = document.getElementById("game-intro");
+
+if (
+  $gamesButton &&
+  $sportsButton &&
+  $countryButton &&
+  $quizIntro &&
+  $gameIntro
+) {
+  let theme = "";
+  let rightAnswers = 0;
+  let questions = data;
+
+  function setupQuiz(button, themeId) {
+    button.addEventListener("click", () => {
+      theme = themeId;
+      $quizIntro.classList.add("hidden");
+      $gameIntro.classList.remove("hidden");
+
+      const themeData = data.themes.find(
+        (themeData) => themeData.id === themeId
+      );
+      if (!themeData) return;
+
+      let currentQuestionIndex = 0;
+
+      function showQuestion() {
+        const current = themeData.questions[currentQuestionIndex];
+
+        $gameIntro.innerHTML = `
+          <h2>${current.question}</h2>
+          <img class="game-intro__image" src="${current.image}" alt="Question Image">
+          <div class="answers">
+            ${current.answers
+              .sort(() => 0.5 - Math.random())
+              .map((answer) => `<button class="answer">${answer.text}</button>`)
+              .join("")}
+          </div>
+        `;
+
+        document.querySelectorAll(".answer").forEach((button) => {
+          button.addEventListener("click", () => {
+            document
+              .querySelectorAll(".answer")
+              .forEach((btn) => (btn.disabled = true));
+            if (
+              button.textContent === current.answers.find((a) => a.isTrue).text
+            ) {
+              button.style.backgroundColor = "green";
+              rightAnswers++;
+            } else {
+              button.style.backgroundColor = "red";
+            }
+
+            currentQuestionIndex++;
+            if (currentQuestionIndex < themeData.questions.length) {
+              setTimeout(showQuestion, 1500);
+            } else {
+              setTimeout(() => {
+                $gameIntro.innerHTML = `
+                  <h2>Quiz afgelopen!</h2>
+                  <p>Je hebt ${rightAnswers} van de ${themeData.questions.length} vragen goed beantwoord.</p>
+                `;
+              }, 1500);
+            }
+          });
+        });
+      }
+
+      showQuestion();
+    });
+  }
+
+  setupQuiz($gamesButton, "games");
+  setupQuiz($sportsButton, "sports");
+  setupQuiz($countryButton, "flags");
+}</code></pre>
+                </div>
+                <p>Met deze code is je quiz volledig functioneel. Zorg ervoor dat je de juiste HTML-structuur en
+                    CSS-styling hebt toegevoegd om alles correct te laten werken.</p>
             </div>
 
             <div class="tutorial-step">
