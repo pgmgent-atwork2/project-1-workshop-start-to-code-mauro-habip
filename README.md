@@ -1,3 +1,7 @@
+# Figjam link
+
+https://www.figma.com/board/9fCqfJr6jmNCV4HXtPsqBC/Untitled?node-id=0-1&t=hO4nfk5TZEvklGWE-1
+
 # De Slimste Student - Quiz Spel Tutorial
 
 Welkom bij de tutorial voor het bouwen van **De Slimste Student**, een eenvoudig quizspel dat je kunt maken met HTML, CSS en JavaScript. Deze tutorial is ontworpen voor beginners en begeleidt je stap voor stap bij het opzetten van je eerste codeerproject.
