@@ -46,6 +46,10 @@
   background-color: #4fa8d3;
 }
 
+.tutorial__image {
+  max-width: 60%;
+}
+
 pre {
   margin: 0;
   white-space: pre-wrap;
